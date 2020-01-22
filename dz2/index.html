@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <script>
+var years = prompt('Сколько вам лет', 100);
+
+var lastNum = years[years.length-1];
+var text;
+
+if (lastNum === '1' && years !== '11') {
+	text = 'год';
+} else if (lastNum === '2' || lastNum === '3' || lastNum === '4') {
+	text = 'года';
+} else {
+	text = 'лет';
+}
+
+alert(`Вам ${years} ${text}`);
+ </script>
+</body>
+
+</html>
