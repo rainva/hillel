@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <script>
+var value =+prompt("Введите число для высоты треугольника","");
+var simbol=prompt("введите символ для треугольника","");
+
+if(simbol.length==1){
+	showMessage();}
+else{confirm("Введите только * или #");}
+	function showMessage(){
+	var str = " "; 
+	var star = simbol; 
+
+for(var i = 0; i < value; i++){ 
+	str += star; 
+	console.log(str); 
+ }
+}
+ </script>
+</body>
+
+</html>
